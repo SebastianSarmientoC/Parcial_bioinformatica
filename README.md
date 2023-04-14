@@ -57,6 +57,9 @@ Breve interpretacion:
 Scolopter se presenta como un género polifilético, con un clado de 3 especies. Queda una especie afuera que se agrupa como especie hermana
 de la secuencia Query. Los otros dos géneros se presentan como monofiléticos. 
 
+![imagen](https://user-images.githubusercontent.com/85046227/232127222-58c9aee1-1816-4cbb-87da-5b7098ef3ff7.png)
+
+
 ## 3.
 mkdir tres 
 
