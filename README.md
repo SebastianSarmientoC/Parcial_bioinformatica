@@ -54,7 +54,7 @@ iqtree -s FcC_supermatrix.fas -m GTR+I+G -bb 1000 -pre concat_muscle
 sudo scp -r -i bio.pt.pem -P 37022  bio.pt@172.25.255.10:/home/bio.pt/data/sebas/parcial_sebastiansarmiento/dos/concat_muscle.treefile /mnt/c/Bioinformatica/
 
 Breve interpretacion: 
-Scolopter se presenta como un género polifilético, con un clado de 3 especies. Queda una especie afuera que se agrupa como especie hermana
+Spodoptera se presenta como un género polifilético, con un clado de 3 especies. Queda una especie afuera que se agrupa como especie hermana
 de la secuencia Query. Los otros dos géneros se presentan como monofiléticos. 
 
 ![imagen](https://user-images.githubusercontent.com/85046227/232127222-58c9aee1-1816-4cbb-87da-5b7098ef3ff7.png)
