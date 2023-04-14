@@ -1,0 +1,149 @@
+IQ-TREE multicore version 1.6.12 for Linux 64-bit built Aug 15 2019
+Developed by Bui Quang Minh, Nguyen Lam Tung, Olga Chernomor,
+Heiko Schmidt, Dominik Schrempf, Michael Woodhams.
+
+Host:    caldas01.urosario.edu (AVX2, FMA3, 251 GB RAM)
+Command: iqtree -s FcC_supermatrix.fas -m GTR+I+G -bb 1000 -pre concat_muscle
+Seed:    827818 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Fri Apr 14 12:15:07 2023
+Kernel:  AVX+FMA - 1 threads (24 CPU cores detected)
+
+HINT: Use -nt option to specify number of threads because your CPU has 24 cores!
+HINT: -nt AUTO will automatically determine the best number of threads to use.
+
+Reading alignment file FcC_supermatrix.fas ... Fasta format detected
+Alignment most likely contains DNA/RNA sequences
+Alignment has 11 sequences with 1537 columns, 63 distinct patterns
+96 parsimony-informative, 8 singleton sites, 1433 constant sites
+                                  Gap/Ambiguity  Composition  p-value
+   1  MK860943.1_COI_Spodoptera_exigua   54.91%    passed     93.85%
+   2  MK860949.1_COI_Mythimna_loreyi     55.82%    passed     83.17%
+   3  MK860950.1_COI_Mythimna_loreyi     55.82%    passed     81.77%
+   4  MK860952.1_COI_Mythimna_loreyi     55.82%    passed     83.17%
+   5  MK860946.1_COI_Spodoptera_cilium   55.04%    passed     93.65%
+   6  MK860945.1_COI_Spodoptera_exigua   54.91%    passed     93.85%
+   7  Query_sequence                      0.00%    passed     42.70%
+   8  MK860947.1_COI_Peridroma_saucia    55.69%    passed     75.67%
+   9  MK860951.1_COI_Mythimna_loreyi     55.82%    passed     83.17%
+  10  MK860948.1_COI_Peridroma_saucia    55.69%    passed     75.67%
+  11  MK860944.1_COI_Spodoptera_exigua   54.91%    passed     93.85%
+WARNING: 10 sequences contain more than 50% gaps/ambiguity
+****  TOTAL                              50.41%  0 sequences failed composition chi2 test (p-value<5%; df=3)
+NOTE: MK860945.1_COI_Spodoptera_exigua is identical to MK860943.1_COI_Spodoptera_exigua but kept for subsequent analysis
+NOTE: MK860952.1_COI_Mythimna_loreyi is identical to MK860949.1_COI_Mythimna_loreyi but kept for subsequent analysis
+NOTE: MK860948.1_COI_Peridroma_saucia is identical to MK860947.1_COI_Peridroma_saucia but kept for subsequent analysis
+NOTE: 2 identical sequences (see below) will be ignored for subsequent analysis
+NOTE: MK860944.1_COI_Spodoptera_exigua (identical to MK860943.1_COI_Spodoptera_exigua) is ignored but added at the end
+NOTE: MK860951.1_COI_Mythimna_loreyi (identical to MK860949.1_COI_Mythimna_loreyi) is ignored but added at the end
+
+For your convenience alignment with unique sequences printed to concat_muscle.uniqueseq.phy
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.000 seconds
+Generating 1000 samples for ultrafast bootstrap (seed: 827818)...
+
+NOTE: 0 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+Thoroughly optimizing +I+G parameters from 10 start values...
+Init pinv, alpha: 0.000, 1.000 / Estimate: 0.000, 0.129 / LogL: -2600.347
+Init pinv, alpha: 0.104, 1.000 / Estimate: 0.103, 0.177 / LogL: -2600.165
+Init pinv, alpha: 0.207, 1.000 / Estimate: 0.207, 0.233 / LogL: -2599.997
+Init pinv, alpha: 0.311, 1.000 / Estimate: 0.310, 0.308 / LogL: -2599.833
+Init pinv, alpha: 0.414, 1.000 / Estimate: 0.414, 0.423 / LogL: -2599.703
+Init pinv, alpha: 0.518, 1.000 / Estimate: 0.517, 0.640 / LogL: -2599.634
+Init pinv, alpha: 0.622, 1.000 / Estimate: 0.621, 1.133 / LogL: -2599.688
+Init pinv, alpha: 0.725, 1.000 / Estimate: 0.722, 4.127 / LogL: -2600.251
+Init pinv, alpha: 0.829, 1.000 / Estimate: 0.758, 117.382 / LogL: -2600.929
+Init pinv, alpha: 0.932, 1.000 / Estimate: 0.755, 69.277 / LogL: -2600.901
+Optimal pinv,alpha: 0.517, 0.640 / LogL: -2599.634
+
+Parameters optimization took 0.141 sec
+
+WARNING: Estimated model parameters are at boundary that can cause numerical instability!
+
+Computing ML distances based on estimated model parameters... 0.001 sec
+Computing BIONJ tree...
+0.000 seconds
+Log-likelihood of BIONJ tree: -2599.629
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 99 parsimony trees... 0.039 second
+Computing log-likelihood of 90 initial trees ... 0.050 seconds
+Current best score: -2599.629
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+
+WARNING: Estimated model parameters are at boundary that can cause numerical instability!
+
+BETTER TREE FOUND at iteration 1: -2599.623
+Iteration 10 / LogL: -2599.628 / Time: 0h:0m:0s
+Iteration 20 / LogL: -2599.628 / Time: 0h:0m:0s
+Finish initializing candidate tree set (1)
+Current best tree score: -2599.623 / CPU time: 0.170
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+UPDATE BEST LOG-LIKELIHOOD: -2599.623
+Iteration 30 / LogL: -2599.624 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 40 / LogL: -2599.624 / Time: 0h:0m:0s (0h:0m:0s left)
+UPDATE BEST LOG-LIKELIHOOD: -2599.623
+UPDATE BEST LOG-LIKELIHOOD: -2599.623
+Iteration 50 / LogL: -2599.625 / Time: 0h:0m:0s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -2617.615
+Iteration 60 / LogL: -2599.625 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 70 / LogL: -2599.623 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 80 / LogL: -2599.625 / Time: 0h:0m:0s (0h:0m:0s left)
+UPDATE BEST LOG-LIKELIHOOD: -2599.623
+Iteration 90 / LogL: -2599.623 / Time: 0h:0m:0s (0h:0m:0s left)
+UPDATE BEST LOG-LIKELIHOOD: -2599.623
+Iteration 100 / LogL: -2599.624 / Time: 0h:0m:0s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -2617.975
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.999
+TREE SEARCH COMPLETED AFTER 102 ITERATIONS / Time: 0h:0m:0s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -2599.623
+Optimal log-likelihood: -2599.623
+Rate parameters:  A-C: 14.68331  A-G: 23.67850  A-T: 63.11782  C-G: 0.00010  C-T: 100.00000  G-T: 1.00000
+Base frequencies:  A: 0.301  C: 0.146  G: 0.146  T: 0.407
+Proportion of invariable sites: 0.517
+Gamma shape alpha: 0.625
+Parameters optimization took 1 rounds (0.001 sec)
+
+WARNING: Estimated model parameters are at boundary that can cause numerical instability!
+
+BEST SCORE FOUND : -2599.623
+Creating bootstrap support values...
+Split supports printed to NEXUS file concat_muscle.splits.nex
+Total tree length: 0.265
+
+Total number of iterations: 102
+CPU time used for tree search: 0.739 sec (0h:0m:0s)
+Wall-clock time used for tree search: 0.743 sec (0h:0m:0s)
+Total CPU time used: 0.921 sec (0h:0m:0s)
+Total wall-clock time used: 0.934 sec (0h:0m:0s)
+
+Computing bootstrap consensus tree...
+Reading input file concat_muscle.splits.nex...
+9 taxa and 27 splits.
+Consensus tree written to concat_muscle.contree
+Reading input trees file concat_muscle.contree
+Log-likelihood of consensus tree: -2599.627
+
+Analysis results written to: 
+  IQ-TREE report:                concat_muscle.iqtree
+  Maximum-likelihood tree:       concat_muscle.treefile
+  Likelihood distances:          concat_muscle.mldist
+
+Ultrafast bootstrap approximation results written to:
+  Split support values:          concat_muscle.splits.nex
+  Consensus tree:                concat_muscle.contree
+  Screen log file:               concat_muscle.log
+
+Date and Time: Fri Apr 14 12:15:08 2023
