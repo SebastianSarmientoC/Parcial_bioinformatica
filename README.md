@@ -77,6 +77,8 @@ grep -v "no_coding" result_file.bed > result_file_coding.bed
 
 ## 4.
 
+nota: cambie de dirección la carpeta de mi parcial pues la tenía en otra carpeta.
+
 zip -r parcial_sebastiansarmiento.zip parcial_sebastiansarmiento/
 
 git init -b main
@@ -84,4 +86,5 @@ git config --global user.name "SebastianSarmientoC"
 git config --global user.email "zarievski@gmail.com"
 
 git remote add origin https://github.com/SebastianSarmientoC/Parcial_bioinformatica.git
+Para bajar la carpeta comprimida al compu:
 sudo scp -r -i bio.pt.pem -P 37022  bio.pt@172.25.255.10:/home/bio.pt/data/Parcial1/parcial_sebastiansarmiento /mnt/c/Bioinformatica/parcial
